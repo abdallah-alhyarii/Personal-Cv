@@ -1,0 +1,300 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fb;
+    color: #263445;
+    line-height: 1.7;
+}
+
+/* Header */
+.hero {
+    background: linear-gradient(135deg, #102a43, #176b87);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.welcome {
+    color: #8ee3f5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.hero h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #d9eaf2;
+}
+
+.location {
+    margin-top: 10px;
+    color: #d9eaf2;
+}
+
+/* Contact Links */
+.contact-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-links a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #8ee3f5;
+    border-radius: 7px;
+    padding: 9px 20px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #8ee3f5;
+    color: #102a43;
+}
+
+/* Main Layout */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+/* Content Cards */
+.card {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: 1px solid #e4eaf0;
+    box-shadow: 0 5px 18px rgba(16, 42, 67, 0.05);
+}
+
+.section-title {
+    color: #176b87;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e3edf3;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+/* Skills */
+.skill-group {
+    margin-bottom: 20px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #334e68;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #e6f4f8;
+    color: #145369;
+    padding: 7px 13px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Education */
+.timeline-item {
+    border-left: 3px solid #176b87;
+    padding-left: 20px;
+}
+
+.timeline-item h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.institution {
+    color: #176b87;
+    font-weight: bold;
+}
+
+.details {
+    color: #64748b;
+}
+
+.gpa {
+    display: inline-block;
+    background-color: #e6f4f8;
+    color: #145369;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-category {
+    color: #176b87;
+    font-weight: bold;
+}
+
+.project ul {
+    margin: 10px 0 18px 25px;
+}
+
+.project li {
+    margin-bottom: 5px;
+}
+
+.tools {
+    background-color: #f3f6fb;
+    padding: 14px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+/* Certifications */
+.certification-list {
+    list-style: none;
+}
+
+.certification-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e4eaf0;
+}
+
+.certification-list li:last-child {
+    border-bottom: none;
+}
+
+.certification-list strong,
+.certification-list span {
+    display: block;
+}
+
+.certification-list span {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Languages */
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e4eaf0;
+}
+
+.language-row:last-child {
+    border-bottom: none;
+}
+
+.language-level {
+    color: #176b87;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    background-color: #102a43;
+    color: #d9eaf2;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hero {
+        padding: 45px 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .welcome {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 22px auto;
+    }
+
+    .card {
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .contact-links {
+        gap: 8px;
+    }
+
+    .contact-links a {
+        padding: 8px 13px;
+        font-size: 14px;
+    }
+
+    .language-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .language-level {
+        text-align: left;
+    }
+}
